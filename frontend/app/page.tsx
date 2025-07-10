@@ -7,15 +7,11 @@ export default function Home() {
   useEffect(() => {
     getUsers().then(setUsers);
   }, []);
-
+  console.log({ users });
   return (
     <div>
       <h1>Users</h1>
-      <ul>
-        {users.map((u: unknown) => (
-          <li key={u.id}>{u.name}</li>
-        ))}
-      </ul>
+      <ul>dsd</ul>
     </div>
   );
 }

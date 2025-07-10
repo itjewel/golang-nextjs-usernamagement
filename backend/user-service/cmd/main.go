@@ -2,10 +2,11 @@ package main
 
 import (
     "log"
-    "user-service/internal/handler"
-    "user-service/internal/repository"
-    "user-service/internal/service"
-    "user-service/pkg/server"
+
+    "github.com/md-jewel-mia/user-service/internal/handler"
+    "github.com/md-jewel-mia/user-service/internal/repository"
+    "github.com/md-jewel-mia/user-service/internal/service"
+    "github.com/md-jewel-mia/user-service/pkg/server"
 )
 
 func main() {
@@ -15,6 +16,6 @@ func main() {
 
     srv := server.NewServer()
     srv.RegisterRoutes(h)
-    
+
     log.Fatal(srv.Run(":8080"))
 }
