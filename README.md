@@ -8,6 +8,10 @@ docker-compose up --build
 
 # OR
 
+# docker image
+
+docker build -t user-service ./backend/user-service
+
 sudo docker-compose up --build
 
 ## Structure
