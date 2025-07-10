@@ -12,6 +12,7 @@ sudo docker-compose up --build
 
 ## Structure
 
+<pre>
 my-app/
 ├── backend/ # Golang microservices
 │ ├── user-service/
@@ -36,3 +37,4 @@ my-app/
 │
 ├── docker-compose.yml
 └── README.md
+</pre>
